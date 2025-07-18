@@ -1468,9 +1468,10 @@ figure.dotted-bg:before {
 }
 
 .esther {
-  background-image: url(/images/Esther\ sisters.jpg);
+  background-image: url(/images/EstherSisters.jpg) !important;
   background-size: contain;
   background-attachment: fixed;
+  
 }
 
 .testimonial-v1 {
