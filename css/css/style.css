@@ -5,8 +5,15 @@ body {
   line-height: 30px;
   font-weight: 300;
   position: relative;
+  background: linear-gradient(to bottom right, #ff2e98, #ff2e98);
+  /* 💗 PINK THEME */
 }
 
+
+
+
+
+/* Optional: match the overlay to a darker pink instead of red */
 body:before {
   content: "";
   position: absolute;
@@ -14,7 +21,8 @@ body:before {
   right: 0;
   bottom: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 20, 147, 0.4);
+  /* 💞 dark pink overlay */
   visibility: hidden;
   opacity: 0;
   -webkit-transition: .3s all ease;
@@ -32,18 +40,21 @@ body.offcanvas:before {
   opacity: 1;
 }
 
+/* If you're still using this element, make sure it doesn't override your new pink */
 body,
 .unslate_co--site-inner {
-  background: #000;
+  background: transparent;
+  /* avoid overriding pink theme */
 }
 
+
 ::-moz-selection {
-  background: #000;
+  background: #ff2e98;
   color: #fff;
 }
 
 ::selection {
-  background: #000;
+  background: #ff0000;
   color: #fff;
 }
 
@@ -125,7 +136,7 @@ a:hover {
 
 .btn.btn-bg-white--hover:hover {
   background-color: #fff;
-  color: #000;
+  color: #ff2e98;
 }
 
 #unslate_co--overlayer {
@@ -133,7 +144,7 @@ a:hover {
   height: 100%;
   position: fixed;
   z-index: 7100;
-  background: #000;
+  background: #ff2e98;
   top: 0;
   left: 0;
   right: 0;
@@ -321,7 +332,7 @@ a:hover {
 .unslate_co--site-nav .site-nav-ul>li.has-children>ul>li a:hover,
 .unslate_co--site-nav .site-nav-ul-none-onepage>li.has-children>.dropdown>li a:hover,
 .unslate_co--site-nav .site-nav-ul-none-onepage>li.has-children>ul>li a:hover {
-  color: #000;
+  color: #ff2e98;
   background: #f9f9f9;
   padding-left: 30px;
 }
@@ -348,7 +359,7 @@ a:hover {
   content: "\e315";
   font-size: 16px;
   top: 50%;
-  color: #000;
+  color: #ff2e98;
   right: 20px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -572,11 +583,11 @@ a:hover {
 }
 
 .unslate_co--site-nav.scrolled .burger-toggle-menu span {
-  background: #000;
+  background: #ff2e98;
 }
 
 .unslate_co--site-nav.scrolled .unslate_co--site-logo {
-  color: #000;
+  color: #ff2e98;
 }
 
 .unslate_co--site-nav.scrolled .site-nav-ul,
@@ -602,7 +613,7 @@ a:hover {
 .unslate_co--site-nav.scrolled .site-nav-ul>li>a,
 .unslate_co--site-nav.scrolled .site-nav-ul-none-onepage>li>a {
   display: block;
-  color: #000;
+  color: #ff2e98;
 }
 
 .unslate_co--site-nav.scrolled .site-nav-ul>li>a:hover,
@@ -683,7 +694,7 @@ a:hover {
 
 .unslate_co--site-mobile-menu .close-wrap a .close-label {
   margin-right: 20px;
-  color: #000;
+  color: #ff2e98;
 }
 
 .unslate_co--site-mobile-menu .close-wrap a .close-times {
@@ -696,7 +707,7 @@ a:hover {
 .unslate_co--site-mobile-menu .close-wrap a .close-times .bar2 {
   width: 2px;
   height: 20px;
-  background: #000;
+  background: #ff2e98;
   position: absolute;
 }
 
@@ -727,7 +738,7 @@ a:hover {
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  color: #000;
+  color: #ff2e98;
 }
 
 .unslate_co--site-mobile-menu ul a:hover,
@@ -771,7 +782,7 @@ a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: #000;
+  color: #ff2e98;
   -webkit-transform: translate(-50%, -50%) rotate(-180deg);
   -ms-transform: translate(-50%, -50%) rotate(-180deg);
   transform: translate(-50%, -50%) rotate(-180deg);
@@ -816,7 +827,7 @@ a:hover {
   background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 79%, rgba(0, 0, 0, 0.05) 80%, black 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(79%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.05)), to(black));
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 79%, rgba(0, 0, 0, 0.05) 80%, black 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2e98000', endColorstr='#ff2e98000', GradientType=0);
 }
 
 .cover-v1.overlay {
@@ -1172,7 +1183,7 @@ a:hover {
 
 @media (max-width: 991.98px) {
   .filter-wrap .filter {
-    background: #000;
+    background: #ff2e98;
     z-index: 9;
     position: absolute;
     min-width: 150px;
@@ -1232,6 +1243,7 @@ a:hover {
 
 .unslate_co--section {
   padding: 7rem 0;
+  background-color: red 1important;
 }
 
 @media (max-width: 991.98px) {
@@ -1471,7 +1483,7 @@ figure.dotted-bg:before {
   background-image: url(/images/EstherSisters.jpg) !important;
   background-size: contain;
   background-attachment: fixed;
-  
+
 }
 
 .testimonial-v1 {
@@ -1974,7 +1986,7 @@ figure.dotted-bg:before {
 .loader-portfolio.dark,
 .site-loader.dark {
   border: 0.3rem solid rgba(0, 0, 0, 0.3);
-  border-top-color: #000;
+  border-top-color: #ff2e98;
 }
 
 @-webkit-keyframes spin {
@@ -2193,5 +2205,5 @@ span.error {
   width: 100%;
   height: 100%;
   border: 1px solid red;
-  background: #000;
+  background: #ff0000;
 }
