@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Arimo:400|Raleway:300,400,700&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 body {
   font-family: "Raleway", sans-serif;
   color: #fff;
@@ -7,6 +9,13 @@ body {
   line-height: 30px;
   font-weight: 300;
   position: relative;
+}
+
+.cursive {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
 }
 
 body:before {
